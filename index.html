@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <article class="todo">
+        <div class="todo__container">
+            <h1 class="todo__title">Список задач на сегодня:&nbsp</h1>
+            <input class="todo__input" type="text" placeholder="Добавить задачу">
+            <ol class="todo__list">
+
+            </ol>
+            <div class="todo__buttons">
+                <button class="todo__btn-save btn">Сохранить</button>
+                <button class="todo__btn-clear btn">Очистить</button>
+                <button class="todo__btn-showtips btn">Справка</button>
+            </div>
+        </div>
+        <div class="help">
+            <div class="help__container">
+                <div class="help__close">&times;</div>
+                <ul class="help__items">
+                    <li>Для добавления списка дел напишите текст в поле ввода и нажмите Enter</li>
+                    <li>Чтобы удалить один пункт, нажмите на значок крестик</li>
+                    <li>Чтобы удалить все списки дел, нажмите "Очистить"</li>
+                    <li>Нажмите "Сохранить", чтобы сохранить список задач</li>
+                    <li>Чтобы отметить задачу как выполненную, нажмите на неё</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+</body>
+
+</html>

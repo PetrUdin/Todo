@@ -1,0 +1,156 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002C52;
+}
+
+.todo {
+    height: 60%;
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #8e9fad;
+    box-shadow: 0 0 4px 3px #FF6600;
+    border-radius: 5px;
+}
+
+.todo__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo__buttons {
+    align-self: flex-end;
+}
+
+.todo__list {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.todo__title {
+    color: #ffff;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.todo__input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+.todo__list li {
+    border-bottom: 1px solid #0000ff;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    list-style: none;
+}
+
+.todo__list li:hover {
+    cursor: pointer;
+}
+
+.trash-ico,
+.help__close {
+    color: #ffa500;
+}
+
+.trash-ico:hover,
+.help__close:hover {
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    background: none;
+    border: 1px solid #2886c5;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #ff0000 !important;
+}
+
+.todo__buttons {
+    margin-bottom: 10px;
+}
+
+.help {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    background-color: #08080899;
+    z-index: 50;
+    padding: 0 30px;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    top: 0
+}
+
+.help__container {
+    max-width: 600px;
+    background: #808080;
+    position: relative;
+    border-radius: 5px;
+}
+
+.help__close {
+    right: -30px;
+    top: -35px;
+    font-size: 50px;
+    position: absolute;
+}
+
+.help__items {
+    list-style: none;
+    color: #ffffff;
+}
+
+.help__items li {
+    padding: 5px;
+}
+
+.active {
+    overflow: hidden;
+    display: flex;
+}
